@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const password = document.getElementById("password").value;
 
     try {
-      const r = await fetch("http://localhost:3000/login", {
+      const r = await fetch("https://firstloginpage.onrender.com/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),

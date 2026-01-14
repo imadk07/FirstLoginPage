@@ -2,6 +2,8 @@ const express = require("express");
 const bcrypt = require("bcrypt");
 const cors = require("cors");
 
+const PORT = process.env.PORT || 3000;
+
 const app = express();
 
 app.use(
@@ -16,6 +18,10 @@ app.use(
 app.use(express.json());
 
 const users = []; // In-memory user storage - replace with database in the future
+
+app.get("/", (req, res) => {
+  res.send("Server is running");
+});
 
 app.post("/register", async (req, res) => {
   const { email, password } = req.body;
@@ -40,6 +46,6 @@ app.post("/login", async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
-  console.log("Server running on port 3000");
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
