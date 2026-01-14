@@ -3,7 +3,9 @@
 A simple login page built using HTML and CSS.
 
 This project is part of my learning journey into full-stack web development.  
-The frontend is currently implemented, and a backend using Node.js and Express will be added in the future.
+The frontend is currently implemented using Html Css and Javascript with working user authentication in back-end aswell as encrypted passwords using Node.js and express.
+
+Currently using a local array to store users and will connect to a database in the future.
 
 ## Features
 
@@ -15,9 +17,9 @@ The frontend is currently implemented, and a backend using Node.js and Express w
 
 - HTML
 - CSS
+- JavaScript
+- Node.js back-end (express.js)
 
 ## Future Plans
 
-- Add Node.js + Express backend
-- Handle login requests
-- Add authentication logic
+-Connect to a database

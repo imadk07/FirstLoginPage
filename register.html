@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imad's Login Page</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="backround">
+      <video autoplay muted loop id="bgVideo">
+        <source src="backround.mp4" type="video/mp4" />
+        Your browser does not support the backround video.
+      </video>
+    </div>
+    <div class="login-box">
+      <div class="login-header">
+        <header>Sign Up</header>
+      </div>
+
+      <!-- Moved form to wrap inputs and submit button; added ids/names -->
+      <form id="register-form">
+        <div class="input-box">
+          <input
+            id="email"
+            name="email"
+            type="email"
+            class="input-field"
+            autocomplete="off"
+            required
+            placeholder="Email"
+          />
+        </div>
+        <div class="input-box">
+          <input
+            id="password"
+            name="password"
+            type="password"
+            class="input-field"
+            autocomplete="off"
+            required
+            placeholder="Password"
+          />
+        </div>
+
+        <div class="forgot">
+          <section>
+            <label for="check"> Remember me</label>
+            <input type="checkbox" id="check" />
+          </section>
+          <section>
+            <a href="#">Forgot Password?</a>
+          </section>
+        </div>
+
+        <div class="test-box">
+          <p id="response-text">test</p>
+        </div>
+
+        <div class="input-submit">
+          <button type="submit" class="submit-btn" id="submit">Sign Up</button>
+        </div>
+      </form>
+
+      <div class="signup-link">
+        <p>Already have an account?</p>
+        <a href="./index.html">Sign In</a>
+      </div>
+    </div>
+    <div class="creds">
+      <p>
+        Video by
+        <a
+          href="https://pixabay.com/users/trilemedia-18833692/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=59291"
+          >Tri Le</a
+        >
+        from
+        <a
+          href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=59291"
+          >Pixabay</a
+        >
+      </p>
+    </div>
+
+    <script src="./register.js"></script>
+  </body>
+</html>
