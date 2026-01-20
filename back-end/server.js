@@ -13,7 +13,7 @@ app.use(
       "http://localhost:5500",
       "https://imadsfirstloginpage.netlify.app",
     ],
-  })
+  }),
 );
 app.use(express.json());
 
@@ -25,6 +25,7 @@ app.get("/", (req, res) => {
 
 app.post("/register", async (req, res) => {
   const { email, password } = req.body;
+
   if (!email || !password) {
     return res.status(400).send("Email and password are required");
   }
